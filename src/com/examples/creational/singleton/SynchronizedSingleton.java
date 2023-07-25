@@ -3,11 +3,15 @@ package com.examples.creational.singleton;
 //Threadsafe
 public class SynchronizedSingleton {
 
-    private static final SynchronizedSingleton instance = null;
+    private static SynchronizedSingleton instance = null;
+    
+    private SynchronizedSingleton() {
+    	
+    }
 
     public static synchronized SynchronizedSingleton getInstance() {
         if(instance == null){
-            return new SynchronizedSingleton();
+        	instance = new SynchronizedSingleton();
         }
         return instance;
     }
