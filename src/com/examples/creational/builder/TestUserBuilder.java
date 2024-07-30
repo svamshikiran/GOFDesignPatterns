@@ -25,8 +25,14 @@ public class TestUserBuilder {
 				// No phone
 				// no address
 				.build();
-
+		
 		System.out.println(user3);
+		
+		User user4 = new User.UserBuilder("Test", "UserThree")
+				.address("TEST ADDRESS")
+				.build();
+
+		System.out.println(user4);
 	}
 
 }

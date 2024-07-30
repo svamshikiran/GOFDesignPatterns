@@ -1,11 +1,10 @@
 package com.examples.behavioral.memento;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.Stack;
 
 public class EmpCaretaker {
 
-	final Deque<EmpMemento> mementos = new ArrayDeque<>();
+	final Stack<EmpMemento> mementos = new Stack<>();
 
 	public EmpMemento getMemento() {
 		EmpMemento empMemento = mementos.pop();

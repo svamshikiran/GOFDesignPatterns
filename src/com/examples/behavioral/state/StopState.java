@@ -4,7 +4,7 @@ public class StopState implements State {
 
 	@Override
 	public void doAction() {
-		System.out.println("TV is turned OFF");
+		System.out.println("TV is turned ON");
 	}
 
 }

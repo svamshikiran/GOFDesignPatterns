@@ -15,5 +15,7 @@ public class TestMessaging {
 		msgObj = MessagingFactory.createNotification("PUSH");
 		
 		msgObj.sendMessage();
+		
+
 	}
 }

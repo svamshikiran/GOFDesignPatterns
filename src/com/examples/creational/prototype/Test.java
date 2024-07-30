@@ -12,19 +12,19 @@ public class Test {
 		
 		
 		//Use the clone method to get the Employee object
-		Employees empsNew = (Employees) emps.clone();
-		List<String> list = empsNew.getEmpList();
-		list.add("new employee");
+		Employees firstCopy =  emps.clone();
+		List<String> firstList = firstCopy.getEmpList();
+		firstList.add("new employee");
 		
-		System.out.println("empsNew List: "+list);
+		System.out.println("empsNew List: "+firstList);
 		
 		
-		Employees empsNew1 = (Employees) emps.clone();
+		Employees secondCopy = emps.clone();
 		
-		List<String> list1 = empsNew1.getEmpList();
-		list1.remove("design");
+		List<String> secondList = secondCopy.getEmpList();
+		secondList.remove("design");
 		
-		System.out.println("empsNew1 List: "+list1);
+		System.out.println("empsNew1 List: "+secondList);
 	}
 
 }

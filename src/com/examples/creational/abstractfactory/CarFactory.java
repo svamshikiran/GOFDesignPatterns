@@ -6,17 +6,17 @@ public class CarFactory {
 		// Prevent instantiation
 	}
 
-	public static Car buildCar(Location location) {
+	public static Car buildCar(Location location, CarType carType) {
 		Car car = null;
 		switch (location) {
 		case USA:
-			car = USACarFactory.buildCar();
+			car = USACarFactory.buildCar(carType);
 			break;
 		case ASIA:
-			car = AisaCarFactory.buildCar();
+			car = AisaCarFactory.buildCar(carType);
 			break;
 		case DEFAULT:
-			car = DefaultCarFactory.buildCar();
+			car = DefaultCarFactory.buildCar(carType);
 			break;
 		default:
 			car = null;

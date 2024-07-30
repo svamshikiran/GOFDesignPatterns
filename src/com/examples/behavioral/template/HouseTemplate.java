@@ -10,6 +10,11 @@ public abstract class HouseTemplate {
 		buildWindows();
 		System.out.println("House is built.");
 	}
+	
+
+	private void buildFoundation() {
+		System.out.println("Building foundation with cement,iron rods and sand");
+	}
 
 	// default implementation
 	private void buildWindows() {
@@ -21,8 +26,5 @@ public abstract class HouseTemplate {
 
 	public abstract void buildPillars();
 
-	private void buildFoundation() {
-		System.out.println("Building foundation with cement,iron rods and sand");
-	}
 
 }
